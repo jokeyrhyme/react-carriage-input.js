@@ -8,7 +8,6 @@ const commonStyles = {
 
 const divStyles = Object.assign({
   commonStyles,
-  border: '1px solid #eee',
   cursor: 'text',
   overflow: 'hidden'
 }, commonStyles)
@@ -39,7 +38,8 @@ class CarriageInput extends Component {
     }
 
     this.handleChange = this.handleChange.bind(this)
-    this.handleCursor = this.handleCursor.bind(this)
+    this.handleClick = this.handleClick.bind(this)
+    this.handleKeyUp = this.handleKeyUp.bind(this)
   }
 
   handleChange (event) {
@@ -53,14 +53,32 @@ class CarriageInput extends Component {
     }
   }
 
-  handleCursor (event) {
+  handleClick (event) {
+    this.updateCursor(event)
+
+    const { onClick } = this.props
+    if (typeof onClick === 'function') {
+      onClick(event)
+    }
+  }
+
+  handleKeyUp (event) {
+    this.updateCursor(event)
+
+    const { onKeyUp } = this.props
+    if (typeof onKeyUp === 'function') {
+      onKeyUp(event)
+    }
+  }
+
+  updateCursor (event) {
     this.setState({
       selectionEnd: event.target.selectionEnd || 0
     })
   }
 
   render () {
-    const { style, fontSize, value } = this.props
+    const { style, fontSize, pattern, placeholder, value } = this.props
     return (
       <div
         style={Object.assign({
@@ -69,12 +87,13 @@ class CarriageInput extends Component {
       >
         <input
           onChange={this.handleChange}
-          onClick={this.handleCursor}
-          onKeyUp={this.handleCursor}
+          onClick={this.handleClick}
+          onKeyUp={this.handleKeyUp}
           style={Object.assign({
             fontSize
           }, getInputStyles(this.state))}
-          type="text"
+          pattern={pattern}
+          placeholder={placeholder}
           value={value}
         />
       </div>
@@ -88,8 +107,17 @@ CarriageInput.propTypes = {
     PropTypes.string
   ]),
   onChange: PropTypes.func,
+  onClick: PropTypes.func,
+  onKeyUp: PropTypes.func,
   style: PropTypes.object,
+  pattern: PropTypes.string,
+  placeholder: PropTypes.string,
   value: PropTypes.string
+}
+
+CarriageInput.defaultProps = {
+  pattern: '',
+  placeholder: ''
 }
 
 module.exports = CarriageInput
