@@ -1,4 +1,6 @@
-Below you will find some information on how to perform common tasks.  
+# react-carriage-input [![npm](https://img.shields.io/npm/v/react-carriage-input.svg?maxAge=2592000)](https://www.npmjs.com/package/react-carriage-input)
+
+Below you will find some information on how to perform common tasks.
 You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/template/README.md).
 
 ## Table of Contents
@@ -74,10 +76,10 @@ For the project to build, **these files must exist with exact filenames**:
 
 You can delete or rename the other files.
 
-You may create subdirectories inside `src`. For faster rebuilds, only files inside `src` are processed by Webpack.  
+You may create subdirectories inside `src`. For faster rebuilds, only files inside `src` are processed by Webpack.
 You need to **put any JS and CSS files inside `src`**, or Webpack won’t see them.
 
-You can, however, create more top-level directories.  
+You can, however, create more top-level directories.
 They will not be included in the production build so you can use them for things like documentation.
 
 ## Available Scripts
@@ -137,7 +139,7 @@ Then make sure `package.json` of your project ends with this block:
 }
 ```
 
-Projects generated with `react-scripts@0.2.0` and higher should already have it.  
+Projects generated with `react-scripts@0.2.0` and higher should already have it.
 If you don’t need ESLint integration with your editor, you can safely delete those three lines from your `package.json`.
 
 Finally, you will need to install some packages *globally*:
@@ -158,7 +160,7 @@ npm install --save <library-name>
 
 ## Importing a Component
 
-This project setup supports ES6 modules thanks to Babel.  
+This project setup supports ES6 modules thanks to Babel.
 While you can still use `require()` and `module.exports`, we encourage you to use [`import` and `export`](http://exploringjs.com/es6/ch_modules.html) instead.
 
 For example:
