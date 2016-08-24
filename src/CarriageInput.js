@@ -60,7 +60,7 @@ class CarriageInput extends Component {
   }
 
   render () {
-    const { style, fontSize, onChange, value } = this.props
+    const { style, fontSize, value } = this.props
     return (
       <div
         style={Object.assign({
@@ -74,7 +74,7 @@ class CarriageInput extends Component {
           style={Object.assign({
             fontSize
           }, getInputStyles(this.state))}
-          type='text'
+          type="text"
           value={value}
         />
       </div>

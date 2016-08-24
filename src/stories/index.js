@@ -1,13 +1,13 @@
-import React from 'react';
-import { storiesOf, action, linkTo } from '@kadira/storybook';
+import React from 'react'
+import { storiesOf, action } from '@kadira/storybook'
 
-import { CarriageInput } from '../../index.js';
+import { CarriageInput } from '../../index.js'
 
 storiesOf('CarriageInput', module)
   .add('defaults', () => (
     <CarriageInput
       divStyle={{ width: '10em' }}
-      fontSize='xx-large'
+      fontSize="xx-large"
       onChange={action('change')}
     />
-  ));
+  ))
