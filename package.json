@@ -44,5 +44,14 @@
     "start": "react-scripts start",
     "storybook": "start-storybook -p 9009",
     "test": "npm run eslint && npm run flow_check && npm run fixpack"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jokeyrhyme/react-carriage-input.js.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/jokeyrhyme/react-carriage-input.js/issues"
+  },
+  "homepage": "https://github.com/jokeyrhyme/react-carriage-input.js#readme"
 }
