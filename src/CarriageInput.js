@@ -78,7 +78,7 @@ class CarriageInput extends Component {
   }
 
   render () {
-    const { style, fontSize, pattern, placeholder, value } = this.props
+    const { style, fontSize, pattern, placeholder, title, value } = this.props
     return (
       <div
         style={Object.assign({
@@ -94,6 +94,7 @@ class CarriageInput extends Component {
           }, getInputStyles(this.state))}
           pattern={pattern}
           placeholder={placeholder}
+          title={title}
           value={value}
         />
       </div>
@@ -112,12 +113,14 @@ CarriageInput.propTypes = {
   style: PropTypes.object,
   pattern: PropTypes.string,
   placeholder: PropTypes.string,
+  title: PropTypes.string,
   value: PropTypes.string
 }
 
 CarriageInput.defaultProps = {
   pattern: '',
-  placeholder: ''
+  placeholder: '',
+  title: ''
 }
 
 module.exports = CarriageInput

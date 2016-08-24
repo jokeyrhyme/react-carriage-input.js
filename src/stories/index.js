@@ -17,14 +17,6 @@ storiesOf('CarriageInput', module)
       onChange={action('change')}
     />
   ))
-  .add('pattern="^\d+$"', () => (
-    <CarriageInput
-      style={{ border: '1px solid #aaa', width: '10em' }}
-      fontSize="xx-large"
-      pattern="^\d+$"
-      onChange={action('change')}
-    />
-  ))
   .add('placeholder', () => (
     <CarriageInput
       style={{ border: '1px solid #aaa', width: '10em' }}
