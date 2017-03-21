@@ -1,7 +1,7 @@
-import React from 'react'
-import { storiesOf, action } from '@kadira/storybook'
+const React = require('react')
+const { storiesOf, action } = require('@kadira/storybook')
 
-import { CarriageInput } from '../../index.js'
+const { CarriageInput } = require('../../index.js')
 
 storiesOf('CarriageInput', module)
   .add('style', () => (
@@ -13,15 +13,15 @@ storiesOf('CarriageInput', module)
   .add('fontSize', () => (
     <CarriageInput
       style={{ border: '1px solid #aaa', width: '10em' }}
-      fontSize="xx-large"
+      fontSize='xx-large'
       onChange={action('change')}
     />
   ))
   .add('placeholder', () => (
     <CarriageInput
       style={{ border: '1px solid #aaa', width: '10em' }}
-      fontSize="xx-large"
-      placeholder="hello, world!"
+      fontSize='xx-large'
+      placeholder='hello, world!'
       onChange={action('change')}
     />
   ))

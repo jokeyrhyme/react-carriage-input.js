@@ -1,7 +1,11 @@
 {
   "extends": [
     "eslint:recommended",
+    "plugin:node/recommended",
     "standard",
     "standard-react"
+  ],
+  "plugins": [
+    "node"
   ]
 }
