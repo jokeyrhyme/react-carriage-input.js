@@ -2,6 +2,9 @@
   "name": "react-carriage-input",
   "description": "A text input component, with the cursor locked in the center",
   "version": "0.0.1",
+  "bugs": {
+    "url": "https://github.com/jokeyrhyme/react-carriage-input.js/issues"
+  },
   "dependencies": {
     "react": "^15.3.1",
     "react-dom": "^15.3.1"
@@ -25,6 +28,7 @@
   "eslintConfig": {
     "extends": "./node_modules/react-scripts/config/eslint.js"
   },
+  "homepage": "https://github.com/jokeyrhyme/react-carriage-input.js#readme",
   "keywords": [
     "carriage",
     "cursor",
@@ -34,6 +38,10 @@
   ],
   "license": "MIT",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jokeyrhyme/react-carriage-input.js.git"
+  },
   "scripts": {
     "build": "react-scripts build",
     "build-storybook": "build-storybook",
@@ -44,14 +52,5 @@
     "start": "react-scripts start",
     "storybook": "start-storybook -p 9009",
     "test": "npm run eslint && npm run flow_check && npm run fixpack"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jokeyrhyme/react-carriage-input.js.git"
-  },
-  "author": "",
-  "bugs": {
-    "url": "https://github.com/jokeyrhyme/react-carriage-input.js/issues"
-  },
-  "homepage": "https://github.com/jokeyrhyme/react-carriage-input.js#readme"
+  }
 }
