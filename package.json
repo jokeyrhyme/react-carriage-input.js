@@ -2,6 +2,7 @@
   "name": "react-carriage-input",
   "description": "A text input component, with the cursor locked in the center",
   "version": "0.0.1",
+  "author": "Ron Waldon <jokeyrhyme@gmail.com> (https://github.com/jokeyrhyme)",
   "bugs": {
     "url": "https://github.com/jokeyrhyme/react-carriage-input.js/issues"
   },
@@ -11,12 +12,13 @@
   },
   "devDependencies": {
     "@kadira/storybook": "^2.0.0",
-    "eslint": "^3.3.1",
-    "eslint-config-standard": "^7.0.2",
-    "eslint-config-standard-react": "^4.2.0",
-    "eslint-plugin-promise": "^3.4.0",
-    "eslint-plugin-react": "^6.1.2",
-    "eslint-plugin-standard": "^2.0.0",
+    "eslint": "^3.18.0",
+    "eslint-config-standard": "^7.1.0",
+    "eslint-config-standard-react": "^4.3.0",
+    "eslint-plugin-node": "^4.2.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-react": "^6.10.3",
+    "eslint-plugin-standard": "^2.1.1",
     "fixpack": "^2.3.1",
     "flow-bin": "^0.42.0",
     "react-scripts": "^0.9.0"
@@ -48,7 +50,7 @@
     "eject": "react-scripts eject",
     "eslint": "eslint --fix --cache .",
     "fixpack": "fixpack",
-    "flow_check": "flow check || exit 0",
+    "flow_check": "flow check",
     "start": "react-scripts start",
     "storybook": "start-storybook -p 9009",
     "test": "npm run eslint && npm run flow_check && npm run fixpack"

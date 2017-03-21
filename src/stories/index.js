@@ -1,7 +1,7 @@
-import React from 'react'
-import { storiesOf, action } from '@kadira/storybook'
+const React = require('react')
+const { storiesOf, action } = require('@kadira/storybook')
 
-import { CarriageInput } from '../../index.js'
+const { CarriageInput } = require('../../index.js')
 
 storiesOf('CarriageInput', module)
   .add('style', () => (
