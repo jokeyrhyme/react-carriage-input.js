@@ -1,5 +1,5 @@
-'use strict'
+'use strict';
 
-const CarriageInput = require('./src/CarriageInput.js')
+const CarriageInput = require('./src/CarriageInput.js');
 
-module.exports = { CarriageInput }
+module.exports = { CarriageInput };
