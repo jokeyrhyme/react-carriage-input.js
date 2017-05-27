@@ -7,8 +7,9 @@
     "url": "https://github.com/jokeyrhyme/react-carriage-input.js/issues"
   },
   "dependencies": {
-    "react": "^15.3.1",
-    "react-dom": "^15.3.1"
+    "prop-types": "^15.5.10",
+    "react": "^15.5.1",
+    "react-dom": "^15.5.1"
   },
   "devDependencies": {
     "@kadira/storybook": "^2.0.0",

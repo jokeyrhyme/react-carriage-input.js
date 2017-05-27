@@ -1,5 +1,6 @@
 const React = require('react')
-const { Component, PropTypes } = React
+const PropTypes = require('prop-types')
+const { Component } = React
 
 const commonStyles = {
   boxSizing: 'border-box',
